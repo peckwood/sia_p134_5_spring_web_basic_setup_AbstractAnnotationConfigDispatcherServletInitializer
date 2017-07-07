@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 
 public class HomeControllerTest {
+	
 	@Test
 	public void testHomXtePage() throws Exception{
 		HomeController controller = new HomeController();

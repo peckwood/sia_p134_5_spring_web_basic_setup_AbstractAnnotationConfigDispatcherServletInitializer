@@ -6,12 +6,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc//enable Spring MVC
-@ComponentScan("spitter.web")//enable component scanning
+@ComponentScan("spittr.web")//enable component scanning
 public class WebConfig extends WebMvcConfigurerAdapter{
 
 	//configure a JSP view resolver
@@ -33,5 +34,4 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 		//handle them itself.
 		configurer.enable();
 	}
-	
 }

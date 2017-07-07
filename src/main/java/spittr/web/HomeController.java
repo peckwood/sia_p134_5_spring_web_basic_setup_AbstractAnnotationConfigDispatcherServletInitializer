@@ -4,8 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller//declared to be a controller
+
 @RequestMapping({"/", "/homepage"})//map controller to /
 public class HomeController {
+	static{
+		System.out.println("home controller created");
+	}
 	
 	//handle GET requests
 	@RequestMapping(method=GET)
