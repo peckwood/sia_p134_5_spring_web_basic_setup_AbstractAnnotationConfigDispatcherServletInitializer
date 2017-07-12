@@ -1,5 +1,7 @@
 These files made it possible for a completely JavaConfig based Spring Web Application
 
+Note it only works on Servlet 3.0 supported contrainers like Tomcat7
+
 - spittr.config.RootConfig
 
 - spittr.config.WebConfig
